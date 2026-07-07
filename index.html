@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaasu Chandra - Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="resume-container">
+        <header>
+            <h1>Vaasu Chandra</h1>
+            <div class="contact-info">
+                <span><i class="fas fa-phone"></i> +91-9174610754</span>
+                <span><i class="fas fa-envelope"></i> <a href="mailto:vaasu2905@gmail.com">vaasu2905@gmail.com</a></span>
+                <span><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/vaasuchandra" target="_blank">linkedin.com/in/vaasuchandra</a></span>
+                <span><i class="fas fa-map-marker-alt"></i> Jabalpur, Madhya Pradesh, India</span>
+            </div>
+        </header>
+
+        <section class="education">
+            <h2>Education</h2>
+            <div class="section-content">
+                <div class="item">
+                    <div class="item-header">
+                        <h3>Vellore Institute of Technology</h3>
+                        <span class="date">Aug 2022 &minus; Apr 2027</span>
+                    </div>
+                    <div class="item-subtitle">5 years Integrated M.Tech in Computer Science and Engineering</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills">
+            <h2>Technical Skills</h2>
+            <div class="section-content">
+                <ul>
+                    <li><strong>Programming Languages:</strong> Python, SQL, HTML/CSS, Flutter</li>
+                    <li><strong>AI/ML & Data Science:</strong> Machine Learning, NLP, NumPy, Pandas, Scikit-learn, TensorFlow, PyTorch, Flask</li>
+                    <li><strong>Databases & Cloud:</strong> MongoDB, MySQL</li>
+                    <li><strong>Tools & Platforms:</strong> Git/GitHub, Postman, Android Studio, Tableau, Power BI</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="projects">
+            <h2>Projects</h2>
+            <div class="section-content">
+                <div class="item">
+                    <div class="item-header">
+                        <h3>AI Fitness Mirror <span class="tech-stack">| Python, OpenCV, MediaPipe, Streamlit, WebRTC</span></h3>
+                        <span class="date">May 2026 &minus; July 2026</span>
+                    </div>
+                    <div class="links">
+                        <a href="#"><i class="fab fa-github"></i> Repo</a>
+                        <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+                    </div>
+                    <ul>
+                        <li>Built a real-time AI fitness coach that automates form-correction feedback via webcam or uploaded video, extracting 33 body landmarks per frame with MediaPipe and computing joint angles (knee, hip, elbow) using NumPy.</li>
+                        <li>Designed a rule-based biomechanical scoring engine and angle-curve state machine to detect form errors (e.g. squat depth, back alignment) and count reps in real time, with auto-exercise detection from torso orientation and joint motion.</li>
+                        <li>Deployed a dual-mode pipeline (video upload with annotated timeline output, and live WebRTC streaming with no frame storage) on Streamlit Cloud, resolving production issues (libGL/glib dependencies, Python version conflicts) to stabilize MediaPipe in a cloud Linux environment.</li>
+                    </ul>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <h3>Real-Time Fraud Detection with Streaming ML <span class="tech-stack">| Python, Kafka, PySpark, XGBoost, MLflow</span></h3>
+                        <span class="date">Jan 2026 &minus; Mar 2026</span>
+                    </div>
+                    <div class="links">
+                        <a href="#"><i class="fab fa-github"></i> Repo</a>
+                        <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+                    </div>
+                    <ul>
+                        <li>Built an end-to-end streaming ML pipeline that automates fraud detection across 284K+ financial transactions via Apache Kafka, running real-time XGBoost inference inside PySpark Structured Streaming with 86.73% recall and 0.976 ROC-AUC.</li>
+                        <li>Engineered SMOTE-based class balancing on a 0.17% fraud-rate dataset and tracked all experiments via MLflow Model Registry, enabling reproducible model versioning and promotion across staging and production.</li>
+                        <li>Persisted real-time predictions to Delta Lake with ACID guarantees and deployed a FastAPI inference endpoint with risk-level scoring, containerized via Docker with Kafka + Zookeeper orchestration.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="experience">
+            <h2>Work Experience</h2>
+            <div class="section-content">
+                <div class="item">
+                    <div class="item-header">
+                        <h3>Software Development Intern</h3>
+                        <span class="date">Oct 2025 &minus; Dec 2025</span>
+                    </div>
+                    <div class="item-subtitle split">
+                        <span>Madhya Pradesh Poorva Kshetra Vidyut Vitaran Company Limited (MPPKVVCL)</span>
+                        <span>Jabalpur, Madhya Pradesh</span>
+                    </div>
+                    <ul>
+                        <li>Developed a Flutter-based mobile app for Android and iOS, delivering real-time electricity consumption insights to 10 Lakh+ consumers across the distribution network.</li>
+                        <li>Secured backend integration via RESTful APIs with token-based authentication and IVRS-based consumer identification to reliably fetch and process live metering data.</li>
+                        <li>Implemented TOD (Time-of-Day) differential logic to disaggregate raw energy register readings into structured T1–T4 tariff-wise breakdowns for actionable billing insights.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="certifications">
+            <h2>Certifications</h2>
+            <div class="section-content">
+                <ul>
+                    <li>Microsoft Azure Fundamentals (AZ-900): Microsoft <a href="#">Certificate</a></li>
+                    <li>IBM AI Engineering: Coursera <a href="#">Certificate</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="extracurriculars">
+            <h2>Extracurriculars</h2>
+            <div class="section-content">
+                <ul>
+                    <li><strong>Genesis X Hackathon (First Place):</strong> Achieved first place among 15 teams by successfully progressing through three rounds of competition and performing comprehensive data analysis to deliver an end-to-end technical solution in the final stage.</li>
+                    <li><strong>StockQuest (Winner):</strong> Secured first place among 50 teams by advancing through five rounds of stock market and trading quizzes and excelling in a real-time market simulation.</li>
+                    <li><strong>Competitive Programming:</strong> Solved 550+ DSA Problems across LeetCode, GeeksforGeeks, and Codeforces.</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
